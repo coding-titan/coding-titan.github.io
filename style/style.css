@@ -1,7 +1,23 @@
 * {
-    font-family: Noto;
+    font-family: "noto sans";
+}
+
+body {
+    background-color: antiquewhite;
 }
 
 h1 {
     text-align: center;
+    opacity: 0.8;
 }
+
+h2 {
+    text-align: center;
+    opacity: 0.8;
+}
+
+p {
+    text-align: center;
+    opacity: 0.8;
+}
+
