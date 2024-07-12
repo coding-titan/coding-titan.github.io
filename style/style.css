@@ -74,6 +74,10 @@ a:hover {
     text-decoration: underline;
 }
 
+a:active {
+    opacity: 0.5;
+}
+
 .container {
     display: flex;
     flex-direction: column;
