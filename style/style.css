@@ -84,10 +84,16 @@ p {
 a {
     text-decoration: none;
     color: inherit;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 .employer {
     background-color: rgba(0, 128, 0, 0.145);
+    padding: 5px 0px;
 }
 
 .employername {
@@ -137,6 +143,10 @@ th {
     background-color: #DDA15E;
 }
 
+.cv-tab {
+    margin-bottom: 40px;
+}
+
 #transparent {
     opacity: 0.5;
 }
@@ -144,6 +154,17 @@ th {
 #code {
     font-family: monospace;
     font-weight: bold;
+}
+
+#navigation {
+    display: block;
+    position: sticky;
+    top: 0px;
+    background-color: #fefae0;
+}
+
+#navigation a {
+    font-weight: normal;
 }
 
 footer {
