@@ -1,39 +1,134 @@
+/* Style swatch: https://coolors.co/palette/606c38-283618-fefae0-dda15e-bc6c25 */
+
 * {
-    font-family: "noto sans";
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #fefae0;
+}
+
+nav {
+    background-color: #DDA15E;
+    padding: 30px;
+    font-family: Poppins, helvetica, serif;
+    font-size: 150%;
+    font-weight: bold;
+    text-align: center;
+    color: #283618;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    text-decoration: dashed;
+    color: inherit;
+    padding: 10px 40px;
 }
 
 img {
     height: 200px;
+    width: 200px;
     display: block;
     margin: 0 auto;
-    transform: scale(1)
-}
-
-body {
-    background-color: antiquewhite;
 }
 
 h1 {
+    font-family: Poppins, arial, sans-serif;
+    font-size: 400%;
     text-align: center;
-    opacity: 0.9;
-    color: rgb(116, 54, 54);
+    padding: 10px;
+    color: black;
+    margin: 25px;
 }
 
 h2 {
+    font-family: Poppins, arial, sans-serif;
+    font-size: 300%;
     text-align: center;
-    opacity: 1;
-    color: rgba(54, 53, 42, 0.685);
+    padding: 2px;
+    color: #283618;
+    margin: 32px;
 }
 
 h3 {
+    font-family: Poppins, arial, sans-serif;
+    font-size: 150%;
     text-align: center;
-    opacity: 0.7;
-    color: rgba(54, 53, 42, 0.685);
+    padding: 10px;
+    color: #283618;
+    margin: 20px 32px;
 }
 
 p {
+    font-family: Lora, "helvetica", serif;
     text-align: center;
-    opacity: 0.8;
-    color: rgba(56, 26, 26, 0.884);
+    padding: 10px;
+    color: #283618;
+    margin: 5px 26px;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    display: block;
+    max-width: 1000px;
+}
+
+.block {
+    background-color: #DDA15E;
+    border-radius: 15px;
+    margin: 10px 32px;
+    width: 400px;
+    display: inline-block;
+}
+
+.block p {
+    margin: 20px 32px;
+}
+
+.block h3 {
+    margin-top: 15px;
+    margin-bottom: 0px;
+}
+
+table, th, td {
+    font-family: Lora, serif;
+    border: 2px solid #283618;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+table {
+    display: block;
+    border: 0px;
+    margin: 10px 30px;
+}
+
+th {
+    font-weight: bold;
+    background-color: #DDA15E;
+}
+
+#transparent {
+    opacity: 0.5;
+}
+
+#code {
+    font-family: monospace;
+    font-weight: bold;
+}
+
+footer {
+    margin-top: 100px;
+    margin-bottom: 20px;
+    font-family: Lora, "helvetica", serif;
+    padding: 5px;
+    text-align: right;
+    color: #283618;
+    top: 20px;
+}
