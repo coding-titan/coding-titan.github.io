@@ -3,6 +3,7 @@
 * {
     margin: 0px;
     padding: 0px;
+    font-weight: normal;
 }
 
 body {
@@ -55,10 +56,21 @@ h2 {
 h3 {
     font-family: Poppins, arial, sans-serif;
     font-size: 150%;
+    font-weight: normal;;
     text-align: center;
     padding: 10px;
     color: #283618;
     margin: 20px 32px;
+}
+
+h4 {
+    font-family: Poppins, arial, sans-serif;
+    font-size: 100%;
+    font-weight: normal;
+    text-align: center;
+    padding: 5px;
+    color: #606C38;
+    margin: 5px 5px;
 }
 
 p {
@@ -72,6 +84,17 @@ p {
 a {
     text-decoration: none;
     color: inherit;
+}
+
+.employer {
+    background-color: rgba(0, 128, 0, 0.145);
+}
+
+.employername {
+    text-align: left;
+    font-family: poppins;
+    font-size: 150%;
+    font-weight: bold;;
 }
 
 .container {
