@@ -10,24 +10,6 @@ body {
     background-color: #fefae0;
 }
 
-nav {
-    background-color: #DDA15E;
-    padding: 30px;
-    font-family: Poppins, helvetica, serif;
-    font-size: 150%;
-    font-weight: bold;
-    text-align: center;
-    color: #283618;
-    display: flex;
-    justify-content: center;
-}
-
-nav a {
-    text-decoration: dashed;
-    color: inherit;
-    padding: 10px 40px;
-}
-
 img {
     height: 200px;
     width: 200px;
