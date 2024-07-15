@@ -75,6 +75,7 @@ a {
     color: inherit;
     font-weight: bold;
     transition: border-bottom 0.3s;
+    display: inline-flex;
 }
 
 a:hover {
@@ -84,6 +85,7 @@ a:hover {
 a:active {
     opacity: 0.5;
     text-shadow: #28361816 2px -2px 4px;
+    translate: -2px 2px;
 }
 
 .navlink a:hover {
@@ -157,10 +159,6 @@ th {
 .cv-tab {
     margin-bottom: 40px;
     margin: 0px auto;
-}
-
-.cv-tab p {
-    
 }
 
 #code {
