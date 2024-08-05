@@ -10,8 +10,28 @@ body {
     background-color: #fefae0;
 }
 
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    background-color: #fefae0;
+    z-index: 1;
+    padding: 5px;
+    text-align: center;
+}
+
+nav a {
+    font-weight: normal;
+}
+
+nav h2 {
+    margin: 10px 15px;
+}
+
 section {
-    scroll-margin-top: 90px;
+    scroll-margin-top: 100px;
 }
 
 img {
@@ -136,12 +156,19 @@ a:active {
 }
 
 .portfolio-img {
-    max-width: 100%;
+    max-width: 800px;
     height: auto;
     object-fit: contain;
     padding: 15px;
     border-top: 5px solid black;
     border-bottom: 5px solid black;
+    opacity: 0.4;
+    transition: opacity 0.3s;
+    margin: 0px 15px;
+}
+
+.portfolio-img:hover {
+    opacity: 1;
 }
 
 table, th, td {
@@ -179,20 +206,6 @@ th {
 
 #profile-picture {
     height: 200px;
-}
-
-nav {
-    display: block;
-    position: sticky;
-    top: 0px;
-    background-color: #fefae0;
-    z-index: 1;
-    padding: 1px;
-    height: 125px;
-}
-
-nav a {
-    font-weight: normal;
 }
 
 footer {
