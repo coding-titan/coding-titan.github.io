@@ -11,8 +11,6 @@ body {
 }
 
 img {
-    height: 200px;
-    width: 200px;
     display: block;
     margin: 0 auto;
 }
@@ -133,6 +131,15 @@ a:active {
     margin-bottom: 0px;
 }
 
+.portfolio-img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    padding: 15px;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+}
+
 table, th, td {
     font-family: Lora, serif;
     border: 2px solid #283618;
@@ -164,6 +171,10 @@ th {
 #code {
     font-family: monospace;
     font-weight: bold;
+}
+
+#profile-picture {
+    height: 200px;
 }
 
 nav {
