@@ -209,11 +209,18 @@ th {
 }
 
 footer {
-    margin-top: 100px;
-    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
     font-family: Lora, "helvetica", serif;
-    padding: 5px;
-    text-align: right;
-    color: #283618;
-    top: 20px;
+    padding: 25px;
+    background-color: #606c38cb;
+}
+
+footer p {
+    color: #fefae0;
+    transition: border-bottom 0.3s;
+}
+
+footer a:hover {
+    border-bottom: 3px solid #fefae0;
 }
