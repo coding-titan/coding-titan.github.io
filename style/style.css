@@ -6,6 +6,10 @@
     font-weight: normal;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #fefae0;
 }
@@ -156,7 +160,9 @@ a:active {
 }
 
 .portfolio-img {
-    max-width: 800px;
+    box-sizing: border-box;
+    max-width: 100vw;
+    padding: 15px;
     height: auto;
     object-fit: contain;
     padding: 15px;
