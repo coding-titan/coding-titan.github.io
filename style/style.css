@@ -1,6 +1,6 @@
 :root {
     --bg-color: rgb(33, 33, 73);
-    --accent-color: rgb(40, 240, 80);
+    --accent-color: rgba(40, 240, 80, 0.755);
     --text-color-main: rgb(241, 241, 241); 
     --sans-font: "Montserrat", helvetica, sans-serif;
 }
@@ -30,6 +30,15 @@ h5 {
     font-weight: 900;
 }
 
+p {
+    font-size: 0.9rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 #header-box:before {
     content: "";
     grid-column: 2;
@@ -43,6 +52,7 @@ h5 {
     flex-direction: column;
     grid-column: 2;
     grid-row: 2;
+    padding: 1rem;
     /*position: absolute;
     top: 25vh;
     left: 20vw;*/
@@ -61,9 +71,8 @@ h5 {
 
 #project-button-container {
     /* border: 3px solid red; */
-    /*position: absolute;
-    top: 50vh;
-    left: 20vw;*/
+    position: relative;
+    bottom: 33%;
     grid-column: 2;
     grid-row: 3;
     width: 60vw;
@@ -83,7 +92,7 @@ h5 {
     color: var(--accent-color);
     border-radius: 3px;
     transition: background-color 0.5s;
-    box-shadow: rgba(245, 245, 245, 0.344) 0.2rem 0.2rem;
+    box-shadow: rgba(245, 245, 245, 0.163) 0.2rem 0.2rem;
 }
 
 .project-button:hover {
@@ -96,4 +105,58 @@ h5 {
     top: 0.2rem;
     left: 0.2rem;
     box-shadow: rgba(245, 245, 245, 0.344) 0rem 0rem;
+}
+
+/* Project info */
+
+.project-info-box {
+    grid-column: 2 / 5;
+    grid-row: 4;
+    margin: 1rem;
+    display: grid;
+    grid-template-rows: 1;
+    grid-template-columns: 3;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 10rem;
+    width: 60vw;
+    overflow: hidden;
+}
+
+#project-text-box {
+    grid-column: 1 / 3;
+    padding-left: 0.5rem;
+    background-color: var(--accent-color);
+    height: 10rem;
+}
+
+#project-image-box {
+    grid-column: 3 / 5;
+    align-self: center;
+}
+
+.project-info-img {
+    height: 10rem;
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.6;
+    transition: opacity 0.5s;
+}
+
+.project-info-img:hover {
+    opacity: 1;
+}
+
+.link {
+    text-decoration: underline;
+    text-underline-position: under;
+    transition: font-size 0.5s;
+}
+
+.link:hover {
+    font-size: 1rem;
+}
+
+.link:active {
+    opacity: 0.7;
 }
