@@ -135,9 +135,8 @@ a {
 /* ------------ */
 
 .project-info-box {
-    grid-column: 2 / 5;
+    grid-column: 2 / 3;
     grid-row: 4;
-    margin: 1rem;
     display: grid;
     grid-template-rows: 1;
     grid-template-columns: 3;
@@ -147,19 +146,21 @@ a {
     width: 60vw;
     overflow: hidden;
     border: 1px solid var(--accent-color);
+    border-radius: 3px;
     padding: 0.33rem;
+    transition: opacity 0.5s;
 }
 
 #project-box-one {
-    display: none;
+    opacity: 0;
 }
 
 #project-box-two {
-    display: none;
+    opacity: 0;
 }
 
 #project-box-three {
-    display: none;
+    opacity: 0;
 }
 
 #project-text-box {

@@ -9,19 +9,19 @@ let buttonThree = document.getElementById("button-three")
 
 // Buttons
 buttonOne.onclick = function() {
-    infoBoxOne.style.display = "grid";
-    infoBoxTwo.style.display = "none";
-    infoBoxThree.style.display = "none";
+    infoBoxOne.style.opacity = "1";
+    infoBoxTwo.style.opacity = "0";
+    infoBoxThree.style.opacity = "0";
 }
 
 buttonTwo.onclick = function() {
-    infoBoxOne.style.display = "none";
-    infoBoxTwo.style.display = "grid";
-    infoBoxThree.style.display = "none";
+    infoBoxOne.style.opacity = "0";
+    infoBoxTwo.style.opacity = "1";
+    infoBoxThree.style.opacity = "0";
 }
 
 buttonThree.onclick = function() {
-    infoBoxOne.style.display = "none";
-    infoBoxTwo.style.display = "none";
-    infoBoxThree.style.display = "grid";
+    infoBoxOne.style.opacity = "0";
+    infoBoxTwo.style.opacity = "0";
+    infoBoxThree.style.opacity = "1";
 }
