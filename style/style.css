@@ -1,5 +1,6 @@
 :root {
     --bg-color: rgb(33, 33, 73);
+    --bg-secondary: rgba(21, 21, 233, 0);
     --accent-color: rgba(40, 240, 80, 0.755);
     --text-color-main: rgb(241, 241, 241); 
     --sans-font: "Montserrat", helvetica, sans-serif;
@@ -121,12 +122,26 @@ a {
     height: 10rem;
     width: 60vw;
     overflow: hidden;
+    border: 1px solid var(--accent-color);
+    padding: 0.33rem;
+}
+
+#project-box-one {
+    display: none;
+}
+
+#project-box-two {
+    display: none;
+}
+
+#project-box-three {
+    display: none;
 }
 
 #project-text-box {
     grid-column: 1 / 3;
     padding-left: 0.5rem;
-    background-color: var(--accent-color);
+    background-color: var(--bg-secondary);
     height: 10rem;
 }
 
