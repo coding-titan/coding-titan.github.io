@@ -10,18 +10,27 @@ let buttonThree = document.getElementById("button-three")
 // Buttons
 buttonOne.onclick = function() {
     infoBoxOne.style.opacity = "1";
+    infoBoxOne.style.zIndex = "10";
     infoBoxTwo.style.opacity = "0";
+    infoBoxTwo.style.zIndex = "1";
     infoBoxThree.style.opacity = "0";
+    infoBoxThree.style.zIndex = "1";
 }
 
 buttonTwo.onclick = function() {
     infoBoxOne.style.opacity = "0";
+    infoBoxOne.style.zIndex = "10";
     infoBoxTwo.style.opacity = "1";
+    infoBoxTwo.style.zIndex = "10";
     infoBoxThree.style.opacity = "0";
+    infoBoxThree.style.zIndex = "1";
 }
 
 buttonThree.onclick = function() {
     infoBoxOne.style.opacity = "0";
+    infoBoxOne.style.zIndex = "1";
     infoBoxTwo.style.opacity = "0";
+    infoBoxTwo.style.zIndex = "1";
     infoBoxThree.style.opacity = "1";
+    infoBoxThree.style.zIndex = "10";
 }
