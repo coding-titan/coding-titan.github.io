@@ -11,5 +11,22 @@ body {
 }
 
 h1 {
-    font-weight: 400;
+    font-weight: 600;
+}
+
+h2 {
+    font-weight: 200;
+}
+
+#header-box {
+    flex-wrap:nowrap;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 25vh;
+    left: 20vw;
+}
+
+#header-box h1, #header-box h2 {
+    text-align: left;
 }
