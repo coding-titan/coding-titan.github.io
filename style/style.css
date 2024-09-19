@@ -6,6 +6,10 @@
     --sans-font: "Montserrat", helvetica, sans-serif;
 }
 
+
+/* General */
+/* --------- */
+
 body {
     background-color: var(--bg-color);
     color: var(--text-color-main);
@@ -40,6 +44,24 @@ a {
     color: inherit;
 }
 
+.link {
+    text-decoration: underline;
+    text-underline-position: under;
+    transition: font-size 0.5s;
+}
+
+.link:hover {
+    font-size: 1rem;
+}
+
+.link:active {
+    opacity: 0.7;
+}
+
+
+/* Header */
+/* ------------ */
+
 #header-box:before {
     content: "";
     grid-column: 2;
@@ -54,9 +76,6 @@ a {
     grid-column: 2;
     grid-row: 2;
     padding: 1rem;
-    /*position: absolute;
-    top: 25vh;
-    left: 20vw;*/
 }
 
 #header-box:after {
@@ -70,8 +89,11 @@ a {
     text-align: left;
 }
 
+
+/* Buttons */
+/* ------------ */
+
 #project-button-container {
-    /* border: 3px solid red; */
     position: relative;
     bottom: 33%;
     grid-column: 2;
@@ -108,7 +130,9 @@ a {
     box-shadow: rgba(245, 245, 245, 0.344) 0rem 0rem;
 }
 
-/* Project info */
+
+/* Project info-box */
+/* ------------ */
 
 .project-info-box {
     grid-column: 2 / 5;
@@ -160,18 +184,4 @@ a {
 
 .project-info-img:hover {
     opacity: 1;
-}
-
-.link {
-    text-decoration: underline;
-    text-underline-position: under;
-    transition: font-size 0.5s;
-}
-
-.link:hover {
-    font-size: 1rem;
-}
-
-.link:active {
-    opacity: 0.7;
 }
