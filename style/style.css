@@ -9,6 +9,10 @@ body {
     background-color: var(--bg-color);
     color: var(--text-color-main);
     font-family: var(--sans-font);
+
+    display: grid;
+    grid-template-columns: 4;
+    grid-template-rows: 5;
 }
 
 h1 {
@@ -26,13 +30,29 @@ h5 {
     font-weight: 900;
 }
 
+#header-box:before {
+    content: "";
+    grid-column: 2;
+    grid-row: 1;
+    height: 6rem;
+}
+
 #header-box {
     flex-wrap:nowrap;
     display: flex;
     flex-direction: column;
-    position: absolute;
+    grid-column: 2;
+    grid-row: 2;
+    /*position: absolute;
     top: 25vh;
-    left: 20vw;
+    left: 20vw;*/
+}
+
+#header-box:after {
+    content: "";
+    grid-column: 2;
+    grid-row: 3;
+    height: 6rem;
 }
 
 #header-box h1, #header-box h2 {
@@ -41,9 +61,11 @@ h5 {
 
 #project-button-container {
     /* border: 3px solid red; */
-    position: absolute;
+    /*position: absolute;
     top: 50vh;
-    left: 20vw;
+    left: 20vw;*/
+    grid-column: 2;
+    grid-row: 3;
     width: 60vw;
     overflow: auto;
     display: flex;
@@ -55,5 +77,8 @@ h5 {
 .project-button {
     width: 25%;
     height: 3rem;
-    background-color: var(--accent-color);
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid var(--accent-color);
+    color: var(--accent-color);
+    border-radius: 3px;
 }
