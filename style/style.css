@@ -164,6 +164,15 @@ a {
     margin-left: 1rem;
 }
 
+@media screen and (max-width: 600px) {
+    .project-info-box {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        height:auto;
+    }
+}
+
 #project-box-one {
     opacity: 0;
 }
