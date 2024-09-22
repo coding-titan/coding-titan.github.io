@@ -154,12 +154,14 @@ a {
     flex-direction: column;
     flex-wrap: wrap;
     height: 10rem;
-    width: 60vw;
+    min-width: 60vw;
+    max-width: 60vw;
     overflow: hidden;
     border: 1px solid var(--accent-color);
     border-radius: 3px;
     padding: 0.33rem;
     transition: opacity 0.5s;
+    margin-left: 1rem;
 }
 
 #project-box-one {
@@ -179,11 +181,13 @@ a {
     padding-left: 0.5rem;
     background-color: var(--bg-secondary);
     height: 10rem;
+    max-width: 15rem;
 }
 
 .project-image-box {
     grid-column: 3 / 5;
     align-self: center;
+    width: 100%;
 }
 
 .project-info-img {

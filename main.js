@@ -15,6 +15,7 @@ buttonOne.onclick = function() {
     infoBoxTwo.style.zIndex = "1";
     infoBoxThree.style.opacity = "0";
     infoBoxThree.style.zIndex = "1";
+    document.body.style.backgroundColor = "darkmagenta";
 }
 
 buttonTwo.onclick = function() {
@@ -24,6 +25,7 @@ buttonTwo.onclick = function() {
     infoBoxTwo.style.zIndex = "10";
     infoBoxThree.style.opacity = "0";
     infoBoxThree.style.zIndex = "1";
+    document.body.style.backgroundColor = "black";
 }
 
 buttonThree.onclick = function() {
@@ -33,4 +35,5 @@ buttonThree.onclick = function() {
     infoBoxTwo.style.zIndex = "1";
     infoBoxThree.style.opacity = "1";
     infoBoxThree.style.zIndex = "10";
+    document.body.style.backgroundColor = "sienna";
 }
