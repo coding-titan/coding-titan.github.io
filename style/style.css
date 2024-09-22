@@ -167,7 +167,12 @@ a {
 }
 
 @media screen and (max-width: 600px) {
+    #project-button-container {
+        margin: 0 auto;
+    }
+    
     .project-info-box {
+        margin: 0 auto;
         height:auto;
         align-items: center;
     }
