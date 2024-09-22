@@ -16,8 +16,8 @@ body {
     font-family: var(--sans-font);
 
     display: grid;
-    grid-template-columns: 4;
-    grid-template-rows: 5;
+    grid-template-columns: 3;
+    grid-template-rows: 4;
 }
 
 header {
@@ -77,7 +77,7 @@ a {
     content: "";
     grid-column: 2;
     grid-row: 1;
-    height: 6rem;
+    height: 12rem;
 }
 
 #header-box {
@@ -85,14 +85,14 @@ a {
     display: flex;
     flex-direction: column;
     grid-column: 2;
-    grid-row: 2;
+    grid-row: 1 / 2;
     padding: 1rem;
 }
 
 #header-box:after {
     content: "";
     grid-column: 2;
-    grid-row: 3;
+    grid-row: 2 / 3;
     height: 6rem;
 }
 
@@ -108,7 +108,7 @@ a {
     position: relative;
     bottom: 33%;
     grid-column: 2;
-    grid-row: 3;
+    grid-row: 2;
     width: 60vw;
     overflow: auto;
     display: flex;
@@ -147,26 +147,24 @@ a {
 
 .project-info-box {
     grid-column: 2 / 3;
-    grid-row: 4;
-    display: grid;
-    grid-template-rows: 1;
-    grid-template-columns: 3;
+    grid-row: 4 / 5;
+    display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    height: 10rem;
-    min-width: 60vw;
-    max-width: 60vw;
+    height: 50%;
+    min-height: 10rem;
+    width: 60vw;
     overflow: hidden;
     border: 1px solid var(--accent-color);
     border-radius: 3px;
     padding: 0.33rem;
     transition: opacity 0.5s;
     margin-left: 1rem;
+    margin-bottom: 1rem;
 }
 
 @media screen and (max-width: 600px) {
     .project-info-box {
-        display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
         height:auto;
@@ -194,15 +192,16 @@ a {
 }
 
 .project-image-box {
-    grid-column: 3 / 5;
     align-self: center;
     width: 100%;
 }
 
 .project-info-img {
-    height: 10rem;
+    height: auto;
+    max-height: 100%;
     width: 100%;
     object-fit: cover;
+    object-position: right 75%;
     opacity: 0.6;
     transition: opacity 0.5s;
 }
@@ -210,3 +209,77 @@ a {
 .project-info-img:hover {
     opacity: 1;
 }
+
+/* Tall screen adjustments for image box */
+
+@media screen and (min-width: 900px) {
+    .project-info-box {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        height:auto;
+        align-items: center;
+    }
+
+    .project-text-box {
+        width: 100%;
+    }
+    
+    .project-image-box {
+        height: auto;
+        max-height: 15rem;
+    }
+    
+    .project-info-img {
+        height:auto;
+        max-height: 15rem;
+    }
+}
+
+@media screen and (min-height: 1100px) {
+    .project-info-box {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        height:auto;
+        max-height: 20rem;
+        align-items: center;
+    }
+
+    .project-text-box {
+        width: 100%;
+    }
+    
+    .project-image-box {
+        height: auto;
+        max-height: 20rem;
+    }
+    
+    .project-info-img {
+        height:auto;
+        max-height: 20rem;
+    }
+}
+
+@media screen and (min-height: 2000px) {
+    .project-info-box {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        height:auto;
+        max-height: 40rem;
+        align-items: center;
+    }
+
+    .project-text-box {
+        width: 100%;
+    }
+    
+    .project-image-box {
+        height: auto;
+        max-height: 40rem;
+    }
+    
+    .project-info-img {
+        height:auto;
+        max-height: 40rem;
+    }
+}
+
