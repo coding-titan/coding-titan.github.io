@@ -6,8 +6,18 @@ const infoBoxThree = document.getElementById("project-box-three")
 const buttonOne = document.getElementById("button-one")
 const buttonTwo = document.getElementById("button-two")
 const buttonThree = document.getElementById("button-three")
+const emailButton = document.getElementById("email-button")
+const emailDropdown = document.getElementById("email-dropdown")
 
 // Buttons
+emailButton.onclick = function() {
+    if (emailDropdown.style.display === "none") {
+        emailDropdown.style.display = "block";
+    } else {
+        emailDropdown.style.display = "none"
+    }
+}
+
 buttonOne.onclick = function() {
     infoBoxOne.style.opacity = "1";
     infoBoxOne.style.zIndex = "10";
