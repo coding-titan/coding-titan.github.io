@@ -46,3 +46,5 @@ buttonThree.onclick = function() {
 
     window.scroll({top: 350, left: 0, behavior: "smooth"})
 }
+
+// Adding this just to be able to push again
