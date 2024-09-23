@@ -1,11 +1,11 @@
 
 // Variable declarations
-let infoBoxOne = document.getElementById("project-box-one")
-let infoBoxTwo = document.getElementById("project-box-two")
-let infoBoxThree = document.getElementById("project-box-three")
-let buttonOne = document.getElementById("button-one")
-let buttonTwo = document.getElementById("button-two")
-let buttonThree = document.getElementById("button-three")
+const infoBoxOne = document.getElementById("project-box-one")
+const infoBoxTwo = document.getElementById("project-box-two")
+const infoBoxThree = document.getElementById("project-box-three")
+const buttonOne = document.getElementById("button-one")
+const buttonTwo = document.getElementById("button-two")
+const buttonThree = document.getElementById("button-three")
 
 // Buttons
 buttonOne.onclick = function() {
@@ -46,5 +46,3 @@ buttonThree.onclick = function() {
 
     window.scroll({top: 350, left: 0, behavior: "smooth"})
 }
-
-// Adding this just to be able to push again
