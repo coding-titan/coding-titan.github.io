@@ -1,11 +1,11 @@
 
 // Variable declarations
-const infoBoxOne = document.getElementById("project-box-one")
-const infoBoxTwo = document.getElementById("project-box-two")
-const infoBoxThree = document.getElementById("project-box-three")
-const buttonOne = document.getElementById("button-one")
-const buttonTwo = document.getElementById("button-two")
-const buttonThree = document.getElementById("button-three")
+const infoBoxOne = document.getElementById("project-box-one");
+const infoBoxTwo = document.getElementById("project-box-two");
+const infoBoxThree = document.getElementById("project-box-three");
+const buttonOne = document.getElementById("button-one");
+const buttonTwo = document.getElementById("button-two");
+const buttonThree = document.getElementById("button-three");
 
 // Buttons
 buttonOne.onclick = function() {
